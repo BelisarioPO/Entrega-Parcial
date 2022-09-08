@@ -1,9 +1,14 @@
-.img-index{
+.img-index {
     max-width: 201px;
     padding: 20px;
 }
 
-.listado-index{
+.listado-index {
     display: flex;
     list-style: none;
+}
+
+.logo {
+    max-width: 50px;
+
 }
