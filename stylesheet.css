@@ -12,3 +12,18 @@
     max-width: 50px;
 
 }
+
+.ul-nav {
+    display: flex;
+    list-style: none;
+}
+
+.a-nav{
+
+    padding: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
