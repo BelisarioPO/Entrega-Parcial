@@ -27,3 +27,11 @@ a{
     color: black;
     text-decoration: none;
 }
+
+body{
+    background-color: black;
+}
+
+h2,h1,p,a{
+    color: white;
+}
