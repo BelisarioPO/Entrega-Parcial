@@ -1,0 +1,9 @@
+.img-index{
+    max-width: 201px;
+    padding: 20px;
+}
+
+.listado-index{
+    display: flex;
+    list-style: none;
+}
