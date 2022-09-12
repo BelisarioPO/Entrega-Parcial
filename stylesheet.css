@@ -16,11 +16,13 @@
 .ul-nav {
     display: flex;
     list-style: none;
+    
 }
 
 .a-nav{
 
     padding: 5px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 a{
@@ -35,3 +37,13 @@ body{
 h2,h1,p,a{
     color: white;
 }
+.Pelis{
+    font-family: 'Orbitron', sans-serif;
+}
+.FAV{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+
