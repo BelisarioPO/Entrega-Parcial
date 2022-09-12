@@ -43,7 +43,10 @@ h2,h1,p,a{
 .FAV{
     color: white;
     font-family: 'Orbitron', sans-serif;
-
-
 }
-
+.detallesserie{
+    font-family: 'Quantico', sans-serif;
+}
+.detallespelis{
+    font-family: 'Quantico', sans-serif;
+}
