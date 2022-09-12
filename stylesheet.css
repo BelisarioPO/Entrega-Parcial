@@ -46,7 +46,12 @@ h2,h1,p,a{
 }
 .detallesserie{
     font-family: 'Quantico', sans-serif;
+    text-align: right;
+    
+    
+    
 }
 .detallespelis{
     font-family: 'Quantico', sans-serif;
+    text-align: right;
 }
