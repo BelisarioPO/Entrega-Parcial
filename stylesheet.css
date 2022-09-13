@@ -45,13 +45,6 @@ h2,h1,p,a{
     color: white;
     font-family: 'Orbitron', sans-serif;
 }
-.detallesserie{
-    font-family: 'Quantico', sans-serif;
-    text-align: right;
-    
-    
-    
-}
 
 
 /*detail-movie*/
@@ -94,18 +87,59 @@ h2,h1,p,a{
     margin-top: 50px;
     margin-left: 15px;
 }
+
 /*header*/
+
 .buscador{ 
     justify-content: center;
     margin-left: 990px;
     margin-top: 15px;
-    
- } 
+} 
+
 .buscador input{ width: 240px; height: 40px; padding: 0 20px; font-size: 18px; color: #000; outline: 1px solid silver; border-radius: 30px; }
 
 .caja-logo-buscador{
-
 display: flex;
+}
+
+/*detail-series*/
+
+
+.seriestitulodetalle{
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 13px;
+}
+
+.detallesseries{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
+.cajaseries{
+    display: flex;
+}
+
+.cajaseriesD{
+    display: inline-block;
 
 }
 
+.imagenseries{
+    margin: 10px;
+    max-width: 250px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.a-favoritosseries{
+    border-style: dotted;
+    border-radius: 15%;
+    padding: 10px;
+    margin-top: 500000000000000px;
+}
+
+.detallesseries-favoritos{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
