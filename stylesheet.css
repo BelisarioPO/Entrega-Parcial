@@ -40,6 +40,7 @@ h2,h1,p,a{
 .Pelis{
     font-family: 'Orbitron', sans-serif;
 }
+
 .FAV{
     color: white;
     font-family: 'Orbitron', sans-serif;
@@ -51,7 +52,47 @@ h2,h1,p,a{
     
     
 }
+
+
+/*detail-movie*/
+
+.pelititulodetalle{
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 13px;
+}
+
 .detallespelis{
     font-family: 'Quantico', sans-serif;
-    text-align: right;
+    font-size: 18px;
 }
+
+.cajapelis{
+    display: flex;
+}
+
+.cajapelisD{
+    display: inline-block;
+
+}
+
+.imagenpelis{
+    margin: 10px;
+    max-width: 250px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.a-favoritos{
+    border-style: dotted;
+    border-radius: 15%;
+    padding: 10px;
+    margin-top: 500000000000000px;
+}
+
+.detallespelis-favoritos{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+/*header*/
+
