@@ -95,4 +95,17 @@ h2,h1,p,a{
     margin-left: 15px;
 }
 /*header*/
+.buscador{ 
+    justify-content: center;
+    margin-left: 990px;
+    margin-top: 15px;
+    
+ } 
+.buscador input{ width: 240px; height: 40px; padding: 0 20px; font-size: 18px; color: #000; outline: 1px solid silver; border-radius: 30px; }
+
+.caja-logo-buscador{
+
+display: flex;
+
+}
 
