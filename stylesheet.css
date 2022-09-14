@@ -143,3 +143,17 @@ display: flex;
     margin-top: 50px;
     margin-left: 15px;
 }
+
+footer {
+    border-top: solid brown;
+    display: flex;
+}
+.fnombres{
+   
+   text-align: right;
+   display: block;
+}
+
+.caja-footer{
+    display: flex;
+}
