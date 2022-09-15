@@ -90,11 +90,12 @@ h2,h1,p,a{
 
 /*header*/
 
-.buscador{ 
-    justify-content: center;
-    margin-left: 990px;
-    margin-top: 15px;
-} 
+
+.buscador{
+    width: 200px; height: 35px;  font-size: 20px; color: #000; outline: 1px solid silver; border-radius: 30px;
+    font-family: 'Quantico', sans-serif;
+}
+
 
 .buscador input{ width: 240px; height: 40px; padding: 0 20px; font-size: 18px; color: #000; outline: 1px solid silver; border-radius: 30px; }
 
