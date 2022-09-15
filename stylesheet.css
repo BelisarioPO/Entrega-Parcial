@@ -1,3 +1,4 @@
+
 .img-index {
     max-width: 201px;
     padding: 20px;
@@ -94,6 +95,7 @@ h2,h1,p,a{
 .buscador{
     width: 200px; height: 35px;  font-size: 20px; color: #000; outline: 1px solid silver; border-radius: 30px;
     font-family: 'Quantico', sans-serif;
+    
 }
 
 
