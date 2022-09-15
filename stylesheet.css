@@ -89,13 +89,20 @@ h2,h1,p,a{
     margin-left: 15px;
 }
 
-/*header*/
 
+.detallespelis-favoritos-serie{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+   margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+/*header*/
 
 .buscador{
     width: 200px; height: 35px;  font-size: 20px; color: #000; outline: 1px solid silver; border-radius: 30px;
     font-family: 'Quantico', sans-serif;
-    
+    margin-left: 1050px;
 }
 
 
