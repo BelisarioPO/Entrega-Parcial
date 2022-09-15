@@ -42,11 +42,17 @@ h2,h1,p,a{
     font-family: 'Orbitron', sans-serif;
 }
 
-.FAV{
-    color: white;
-    font-family: 'Orbitron', sans-serif;
+/*Favoritos*/
+
+.imgfav{
+    padding: 15px;
+    max-width: 90%;
 }
 
+.favfav{
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+}
 
 /*detail-movie*/
 
