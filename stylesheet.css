@@ -2,6 +2,9 @@
 .img-index {
     max-width: 201px;
     padding: 20px;
+   
+    
+    
 }
 
 .listado-index {
@@ -172,4 +175,9 @@ footer {
 
 .caja-footer{
     display: flex;
+    padding-top: 25px;
+}
+
+.nombres-footer{
+ padding-left: 870px;
 }
