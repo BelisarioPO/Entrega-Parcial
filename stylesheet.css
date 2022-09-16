@@ -12,22 +12,6 @@
     list-style: none;
 }
 
-.logo {
-    max-width: 50px;
-
-}
-
-.ul-nav {
-    display: flex;
-    list-style: none;
-    
-}
-
-.a-nav{
-
-    padding: 5px;
-    font-family: 'Orbitron', sans-serif;
-}
 
 a{
     color: black;
@@ -84,12 +68,7 @@ h2,h1,p,a{
     font-family: 'Orbitron', sans-serif;
 }
 
-.a-favoritos{
-    border-style: dotted;
-    border-radius: 15%;
-    padding: 10px;
-    margin-top: 500000000000000px;
-}
+
 
 .detallespelis-favoritos{
     font-family: 'Quantico', sans-serif;
@@ -108,21 +87,50 @@ h2,h1,p,a{
 
 /*header*/
 
+
+
+.BingleTon{
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px;
+    display: flex;
+}
+
+.header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+
+
+}
+.header form{
+    margin-left: 32%;
+}
+.logo {
+    max-width: 50px;
+
+}
+
+.ul-nav {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin-right: auto;
+}
+
+.a-nav{
+
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
 .buscador{
     width: 200px; height: 35px;  font-size: 20px; color: #000; outline: 1px solid silver; border-radius: 30px;
     font-family: 'Quantico', sans-serif;
-    margin-left: 1050px;
+
 }
-
-
-.buscador input{ width: 240px; height: 40px; padding: 0 20px; font-size: 18px; color: #000; outline: 1px solid silver; border-radius: 30px; }
-
-.caja-logo-buscador{
-display: flex;
-}
-
 /*detail-series*/
-
 
 .seriestitulodetalle{
     font-family: 'Orbitron', sans-serif;
@@ -149,12 +157,6 @@ display: flex;
     font-family: 'Orbitron', sans-serif;
 }
 
-.a-favoritosseries{
-    border-style: dotted;
-    border-radius: 15%;
-    padding: 10px;
-    margin-top: 500000000000000px;
-}
 
 .detallesseries-favoritos{
     font-family: 'Quantico', sans-serif;
