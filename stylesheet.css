@@ -93,6 +93,8 @@ h2,h1,p,a{
     font-family: 'Orbitron', sans-serif;
     padding: 20px;
     display: flex;
+    font-size: 30px;
+    
 }
 
 .header{
