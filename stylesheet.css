@@ -94,7 +94,7 @@ h2,h1,p,a{
     padding: 20px;
     display: flex;
     font-size: 30px;
-    
+    margin-right: 20px;
 }
 
 .header{
@@ -184,4 +184,41 @@ footer {
 
 .nombres-footer{
  padding-left: 870px;
+}
+
+.container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quantico', sans-serif;
+}
+
+.caja {
+    padding: 0px 50px;
+    text-align: center;
+}
+
+.generos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.caja h2 {
+    color: red
+}
+
+.titulosgeneros {
+    color: red;
+    font-size: 50px;
+    margin-left: 500px;
+    display:inline-block;
+}
+
+.detalles {
+    display: flex;
 }
