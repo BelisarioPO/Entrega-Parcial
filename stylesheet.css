@@ -94,7 +94,6 @@ h2,h1,p,a{
     padding: 20px;
     display: flex;
     font-size: 30px;
-    margin-right: 20px;
 }
 
 .header{
@@ -190,7 +189,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Quantico', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .caja {
@@ -215,10 +214,16 @@ footer {
 .titulosgeneros {
     color: red;
     font-size: 50px;
-    margin-left: 500px;
-    display:inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .detalles {
     display: flex;
+}
+
+.textocomedia {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
