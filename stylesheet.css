@@ -1,17 +1,28 @@
-
-.img-index {
-    max-width: 201px;
-    padding: 20px;
-   
-    
-    
-}
-
-.listado-index {
+/* Orden index */
+.listado-movie-index-populares {
     display: flex;
     list-style: none;
 }
 
+.listado-movies-index-top-rated {
+    display: flex;
+    list-style: none;
+}
+
+.listado-tv-index-popular {
+    display: flex;
+    list-style: none;
+}
+
+.listado-tv-index-top-rated {
+    display: flex;
+    list-style: none;
+}
+
+.img-index {
+    max-width: 201px;
+    padding: 20px; 
+}
 
 a{
     color: black;
@@ -94,6 +105,7 @@ h2,h1,p,a{
     padding: 20px;
     display: flex;
     font-size: 30px;
+    margin-right: 20px;
 }
 
 .header{
@@ -189,7 +201,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Quantico', sans-serif;
 }
 
 .caja {
@@ -214,17 +226,10 @@ footer {
 .titulosgeneros {
     color: red;
     font-size: 50px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
+    margin-left: 500px;
+    display:inline-block;
 }
 
 .detalles {
     display: flex;
-}
-
-.textocomedia {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
