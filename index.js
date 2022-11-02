@@ -16,7 +16,9 @@ let url_Movies_Popular = "https://api.themoviedb.org/3/movie/popular?api_key=5b2
         for (let i = 0; i < data.results.length; i++) {
 
             section_Movies_populares += `<li>
-    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> </li>`
+            <a href="detail-movie.html?id=${data.results[i].id}" </a>
+    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
+    </li>`
 
         }
 
@@ -110,7 +112,8 @@ let url_Tv_Valorados = "https://api.themoviedb.org/3/tv/top_rated?api_key=5b2a5c
         for (let y = 0; y < data.results.length; y++) {
 
             section_Tv_top_rated += `<li>
-    <img src="${urlAppend + data.results[y].poster_path}" alt="" class="img-index"/> </li>`
+    <img src="${urlAppend + data.results[y].poster_path}" alt="" class="img-index"/> 
+    </li>`
 
         }
 
