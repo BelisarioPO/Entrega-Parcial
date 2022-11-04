@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="stylesheet.css">
     <title>Peliculas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-</head>
+
+
 
 <body>
     <header>
@@ -28,32 +31,54 @@
 
     </header>
     <main>
-        <ul>
-            <h2 class="Pelis">Peliculas populares</h2>
-            <div class="listado-movie-index-populares">
+        <h2 class="Pelis">Peliculas populares</h2>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            <ul class="listado-movie-index-populares">
 
-            </div>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+
+        </div>
+
+        <h2 class="Pelis">Las más valoradas</h2>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        <ul class="listado-movies-index-top-rated">
+
         </ul>
-        <ul>
-            <h2 class="Pelis">Las más valoradas</h2>
-            <div class="listado-movies-index-top-rated">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slider-item="next"></a>
+        </div>
 
-            </div>
+
+        <h2 class="Pelis">Series del momento</h2>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        <ul class="listado-tv-index-popular">
+
         </ul>
-        <ul>
-            <h2 class="Pelis">Series del momento</h2>
-            <div class="listado-tv-index-popular">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slider-item="next"></a>
+        </div>
 
 
-            </div>
+        <h2 class="Pelis">Shows mas valorados</h2>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        <ul class="listado-tv-index-top-rated">
         </ul>
-        <ul>
-            <h2 class="Pelis">Shows mas valorados</h2>
-            <div class="listado-tv-index-top-rated">
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slider-item="next"></a>
+        </div>
 
 
-            </div>
-        </ul>
+
     </main>
     <footer>
         <div class="caja-footer">
@@ -68,7 +93,11 @@
         </div>
 
     </footer>
+
     <script src="index.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>

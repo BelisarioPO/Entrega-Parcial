@@ -2,7 +2,7 @@
 
 
 let url_Movies_Popular = "https://api.themoviedb.org/3/movie/popular?api_key=5b2a5c18601c66bcba1ae9c824344c2b&language=en-US&page=1"
-    fetch(url_Movies_Popular)
+fetch(url_Movies_Popular)
     .then(function (response) {
         return response.json();
     })
@@ -35,7 +35,7 @@ let url_Movies_Popular = "https://api.themoviedb.org/3/movie/popular?api_key=5b2
 
 
 let url_Movies_Valorados = "https://api.themoviedb.org/3/movie/top_rated?api_key=5b2a5c18601c66bcba1ae9c824344c2b&language=en-US&page=1"
-    fetch(url_Movies_Valorados)
+fetch(url_Movies_Valorados)
     .then(function (response) {
         return response.json();
     })
@@ -46,11 +46,12 @@ let url_Movies_Valorados = "https://api.themoviedb.org/3/movie/top_rated?api_key
         let index_Movies_Top_Rated = document.querySelector(".listado-movies-index-top-rated")
         let section_Movies_top_rated = ''
 
-        for (let e = 0; e < data.results.length; e++) {
-
+        for (let i = 0; i < data.results.length; i++) {
             section_Movies_top_rated += `<li>
-    <img src="${urlAppend + data.results[e].poster_path}" alt="" class="img-index"/> </li>`
-
+            <a href="detail-movie.html?id=${data.results[i].id}" </a>
+    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
+    </li>`
+            
         }
 
         index_Movies_Top_Rated.innerHTML = section_Movies_top_rated
@@ -67,7 +68,7 @@ let url_Movies_Valorados = "https://api.themoviedb.org/3/movie/top_rated?api_key
 
 
 let url_Tv_Populares = "https://api.themoviedb.org/3/tv/popular?api_key=5b2a5c18601c66bcba1ae9c824344c2b&language=en-US&page=1"
-    fetch(url_Tv_Populares)
+fetch(url_Tv_Populares)
     .then(function (response) {
         return response.json();
     })
@@ -78,10 +79,11 @@ let url_Tv_Populares = "https://api.themoviedb.org/3/tv/popular?api_key=5b2a5c18
         let index_Tv_populares = document.querySelector(".listado-tv-index-popular")
         let section_Tv_Popular = ''
 
-        for (let x = 0; x < data.results.length; x++) {
-
+        for (let i = 0; i < data.results.length; i++) {
             section_Tv_Popular += `<li>
-    <img src="${urlAppend + data.results[x].poster_path}" alt="" class="img-index"/> </li>`
+            <a href="detail-serie.html?id=${data.results[i].id}" </a>
+    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
+    </li>`
 
         }
 
@@ -98,7 +100,7 @@ let url_Tv_Populares = "https://api.themoviedb.org/3/tv/popular?api_key=5b2a5c18
 
 
 let url_Tv_Valorados = "https://api.themoviedb.org/3/tv/top_rated?api_key=5b2a5c18601c66bcba1ae9c824344c2b&language=en-US&page=1"
-    fetch(url_Tv_Valorados)
+fetch(url_Tv_Valorados)
     .then(function (response) {
         return response.json();
     })
@@ -109,12 +111,11 @@ let url_Tv_Valorados = "https://api.themoviedb.org/3/tv/top_rated?api_key=5b2a5c
         let index_Tv_Top_Rated = document.querySelector(".listado-tv-index-top-rated")
         let section_Tv_top_rated = ''
 
-        for (let y = 0; y < data.results.length; y++) {
-
+        for (let i = 0; i < data.results.length; i++) {
             section_Tv_top_rated += `<li>
-    <img src="${urlAppend + data.results[y].poster_path}" alt="" class="img-index"/> 
+            <a href="detail-serie.html?id=${data.results[i].id}" </a>
+    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
     </li>`
-
         }
 
         index_Tv_Top_Rated.innerHTML = section_Tv_top_rated
