@@ -11,6 +11,22 @@ fetch(urlMovies)
 console.log(data);
 let titulo = document.querySelector(".pelititulodetalle")
 titulo.innerText = data.title
+
+
+let sinopsis = document.querySelector(".detallespelisSINOPSIS")
+sinopsis.innerText = data.overview
+
+let fechadestreno = document.querySelector(".detallespelisFECHA")
+fechadestreno.innerText = data.release_date
+
+//let duracionpeli = document.querySelector()//
+//duracionpeli.innerText =// 
+
+let rating = document.querySelector(".detallespelisRATING")
+rating.innerText = data.popularity
+
+let genero = document.querySelector()
+//genero.innerText = data.!!
 })
 .catch(function (error) {
     console.log("Los errores son" + error)

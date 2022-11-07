@@ -63,6 +63,18 @@ h2,h1,p,a{
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
 }
+.detallespelisSINOPSIS{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+.detallespelisFECHA{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+.detallespelisRATING{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
 
 .cajapelis{
     display: flex;
@@ -209,15 +221,6 @@ footer {
     text-align: center;
 }
 
-.generos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-}
 
 .caja h2 {
     color: red
@@ -233,3 +236,11 @@ footer {
 .detalles {
     display: flex;
 }
+
+/*GENEROS*/
+.Genres {
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
