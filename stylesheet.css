@@ -21,71 +21,77 @@
 
 .img-index {
     max-width: 201px;
-    padding: 20px; 
+    padding: 20px;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
-body{
+body {
     background-color: black;
 }
 
-h2,h1,p,a{
+h2,
+h1,
+p,
+a {
     color: white;
 }
-.Pelis{
+
+.Pelis {
     font-family: 'Orbitron', sans-serif;
 }
 
 /*Favoritos*/
 
-.imgfav{
+.imgfav {
     padding: 15px;
     max-width: 90%;
 }
 
-.favfav{
+.favfav {
     font-family: 'Orbitron', sans-serif;
     display: flex;
 }
 
 /*detail-movie*/
 
-.pelititulodetalle{
+.detallespelisTITULO {
     font-family: 'Orbitron', sans-serif;
     margin-left: 13px;
 }
 
-.detallespelis{
-    font-family: 'Quantico', sans-serif;
-    font-size: 18px;
-}
-.detallespelisSINOPSIS{
-    font-family: 'Quantico', sans-serif;
-    font-size: 18px;
-}
-.detallespelisFECHA{
-    font-family: 'Quantico', sans-serif;
-    font-size: 18px;
-}
-.detallespelisRATING{
-    font-family: 'Quantico', sans-serif;
-    font-size: 18px;
-}
-
-.cajapelis{
+.detallespelisIMG {
     display: flex;
 }
 
-.cajapelisD{
+.detallespelisSINOPSIS {
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
+.detallespelisFECHA {
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
+.detallespelisRATING {
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
+.cajapelis {
+    display: flex;
+}
+
+.cajapelisD {
     display: inline-block;
 
 }
 
-.imagenpelis{
+.imagenpelis {
     margin: 10px;
     max-width: 250px;
     font-family: 'Orbitron', sans-serif;
@@ -93,7 +99,7 @@ h2,h1,p,a{
 
 
 
-.detallespelis-favoritos{
+.detallespelis-favoritos {
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
     margin-top: 50px;
@@ -101,10 +107,10 @@ h2,h1,p,a{
 }
 
 
-.detallespelis-favoritos-serie{
+.detallespelis-favoritos-serie {
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     margin-left: 15px;
 }
 
@@ -112,7 +118,7 @@ h2,h1,p,a{
 
 
 
-.BingleTon{
+.BingleTon {
     font-family: 'Orbitron', sans-serif;
     padding: 20px;
     display: flex;
@@ -120,18 +126,20 @@ h2,h1,p,a{
     margin-right: 20px;
 }
 
-.header{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 
 
 }
-.header form{
+
+.header form {
     margin-left: 32%;
 }
+
 .logo {
     max-width: 50px;
 
@@ -144,46 +152,52 @@ align-items: center;
     margin-right: auto;
 }
 
-.a-nav{
+.a-nav {
 
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
 }
 
-.buscador{
-    width: 200px; height: 35px;  font-size: 20px; color: #000; outline: 1px solid silver; border-radius: 30px;
+.buscador {
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    color: #000;
+    outline: 1px solid silver;
+    border-radius: 30px;
     font-family: 'Quantico', sans-serif;
 
 }
+
 /*detail-series*/
 
-.seriestitulodetalle{
+.seriestitulodetalle {
     font-family: 'Orbitron', sans-serif;
     margin-left: 13px;
 }
 
-.detallesseries{
+.detallesseries {
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
 }
 
-.cajaseries{
+.cajaseries {
     display: flex;
 }
 
-.cajaseriesD{
+.cajaseriesD {
     display: inline-block;
 
 }
 
-.imagenseries{
+.imagenseries {
     margin: 10px;
     max-width: 250px;
     font-family: 'Orbitron', sans-serif;
 }
 
 
-.detallesseries-favoritos{
+.detallesseries-favoritos {
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
     margin-top: 50px;
@@ -194,43 +208,20 @@ footer {
     border-top: solid brown;
     display: flex;
 }
-.fnombres{
-   
-   text-align: right;
-   display: block;
+
+.fnombres {
+
+    text-align: right;
+    display: block;
 }
 
-.caja-footer{
+.caja-footer {
     display: flex;
     padding-top: 25px;
 }
 
-.nombres-footer{
- padding-left: 870px;
-}
-
-.container{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Quantico', sans-serif;
-}
-
-.caja {
-    padding: 0px 50px;
-    text-align: center;
-}
-
-
-.caja h2 {
-    color: red
-}
-
-.titulosgeneros {
-    color: red;
-    font-size: 50px;
-    margin-left: 500px;
-    display:inline-block;
+.nombres-footer {
+    padding-left: 870px;
 }
 
 .detalles {
@@ -241,6 +232,11 @@ footer {
 .Genres {
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
 }
 
-
+.titulosgeneros{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    
+}
