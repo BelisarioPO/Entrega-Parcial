@@ -10,7 +10,6 @@ fetch(urlMovies)
     .then(function (data) {
         console.log(data);
 
-        let urlAppend = "https://image.tmdb.org/t/p/original"
         let urlIMG = `https://api.themoviedb.org/3/movie/${id}/images?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US`
 
         let titulo = document.querySelector(".detallespelisTITULO")
