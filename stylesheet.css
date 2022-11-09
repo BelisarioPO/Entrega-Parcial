@@ -81,6 +81,16 @@ a {
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
 }
+.detallespelisDURACION{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
+.detallespelisGENEROS{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
 
 .cajapelis {
     display: flex;
@@ -214,6 +224,26 @@ footer {
     text-align: right;
     display: block;
 }
+
+.detallesSeriesSINOPSIS{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
+.detallesSeriesFECHA{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
+.detallesSeriesRATING{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+.detallesSeriesGENEROS{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
 
 .caja-footer {
     display: flex;
