@@ -10,14 +10,13 @@ fetch(urlMovies)
     .then(function (data) {
         console.log(data);
 
-        let urlIMG = `https://api.themoviedb.org/3/movie/${id}/images?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US`
+        let urlappend = "https://image.tmdb.org/t/p/w500"
 
         let titulo = document.querySelector(".detallespelisTITULO")
         titulo.innerText = data.title
 
         let imagen = document.querySelector(".detallespelisIMG")
-        imagen.innerHTML = `<img src="${urlIMG} alt="">`
-
+        imagen.innerHTML = `<img src="${urlappend + data.backdrop_path}" alt="" >`
 
 
         let sinopsis = document.querySelector(".detallespelisSINOPSIS")
@@ -40,6 +39,23 @@ fetch(urlMovies)
             </li>`
         }
         genero.innerHTML = Generos
+    })
+    .catch(function (error) {
+        console.log("Los errores son" + error)
+    })
+
+    let url_Movies_Plataformas = "https://api.themoviedb.org/3/watch/providers/movie?api_key=5b2a5c18601c66bcba1ae9c824344c2b&language=en-US"
+fetch(url_Movies_Plataformas)
+    .then(function (Response) {
+        return Response.json();
+    })
+    .then(function (Data) {
+        console.log(Data);
+    let plataformas = document.querySelector(".detallespelisPlataformas")
+    
+    
+    
+    
     })
     .catch(function (error) {
         console.log("Los errores son" + error)

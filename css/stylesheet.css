@@ -24,13 +24,9 @@
     padding: 20px;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
 
 body {
-    background-color: black;
+    background-image: url(../img/background.jpg);
 }
 
 h2,
@@ -46,17 +42,16 @@ a {
 
 /*Favoritos*/
 
-.imgfav {
-    padding: 15px;
-    max-width: 90%;
-}
 
-.favfav {
-    font-family: 'Orbitron', sans-serif;
-    display: flex;
-}
+
+
 
 /*detail-movie*/
+.subtitulo-movies{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+
+}
 
 .detallespelisTITULO {
     font-family: 'Orbitron', sans-serif;
@@ -89,25 +84,8 @@ a {
 .detallespelisGENEROS{
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
+    list-style: none;
 }
-
-
-.cajapelis {
-    display: flex;
-}
-
-.cajapelisD {
-    display: inline-block;
-
-}
-
-.imagenpelis {
-    margin: 10px;
-    max-width: 250px;
-    font-family: 'Orbitron', sans-serif;
-}
-
-
 
 .detallespelis-favoritos {
     font-family: 'Quantico', sans-serif;
@@ -126,8 +104,6 @@ a {
 
 /*header*/
 
-
-
 .BingleTon {
     font-family: 'Orbitron', sans-serif;
     padding: 20px;
@@ -143,7 +119,6 @@ a {
     align-items: center;
 
 
-
 }
 
 .header form {
@@ -152,6 +127,7 @@ a {
 
 .logo {
     max-width: 50px;
+    margin-top: 50%;
 
 }
 
@@ -181,29 +157,9 @@ a {
 
 /*detail-series*/
 
-.seriestitulodetalle {
+.subtitulo-series{
     font-family: 'Orbitron', sans-serif;
-    margin-left: 13px;
-}
-
-.detallesseries {
-    font-family: 'Quantico', sans-serif;
-    font-size: 18px;
-}
-
-.cajaseries {
-    display: flex;
-}
-
-.cajaseriesD {
-    display: inline-block;
-
-}
-
-.imagenseries {
-    margin: 10px;
-    max-width: 250px;
-    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
 }
 
 
@@ -214,15 +170,11 @@ a {
     margin-left: 15px;
 }
 
-footer {
-    border-top: solid brown;
-    display: flex;
-}
 
-.fnombres {
+.detallesSeriesTITULO{
+    font-family: 'Quantico', sans-serif;
+    font-size: 40px;
 
-    text-align: right;
-    display: block;
 }
 
 .detallesSeriesSINOPSIS{
@@ -242,21 +194,9 @@ footer {
 .detallesSeriesGENEROS{
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
+    list-style: none;
 }
 
-
-.caja-footer {
-    display: flex;
-    padding-top: 25px;
-}
-
-.nombres-footer {
-    padding-left: 870px;
-}
-
-.detalles {
-    display: flex;
-}
 
 /*GENEROS*/
 .Genres {
@@ -269,4 +209,15 @@ footer {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     
+}
+
+/*FOOTER*/
+footer {
+    border-top: solid brown;
+    display: flex;
+}
+.nombres-footer {
+    padding-left:66%;
+    list-style: none;
+    color: grey;
 }

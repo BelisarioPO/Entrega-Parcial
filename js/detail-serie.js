@@ -10,14 +10,13 @@ fetch(urlSerie)
     .then(function (data) {
         console.log(data);
 
-        let urlAppend = "https://image.tmdb.org/t/p/original"
-        let urlIMG = `https://api.themoviedb.org/3/tv/${id}/images?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US`
+        let urlAppend = "https://image.tmdb.org/t/p/w500"
 
         let titulo = document.querySelector(".detallesSeriesTITULO")
         titulo.innerText = data.name
 
         let imagen = document.querySelector(".detallesSeriesIMG")
-        imagen.innerHTML = `<img src="${urlIMG} alt="">`
+        imagen.innerHTML = `<img src="${urlAppend + data.backdrop_path}" alt="" >`
 
         let sinopsis = document.querySelector(".detallesSeriesSINOPSIS")
         sinopsis.innerText = data.overview
