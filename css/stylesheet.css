@@ -200,18 +200,27 @@ a {
 
 /*GENEROS*/
 .Genres {
-    padding: 5px;
+    padding: 20px;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
+    font-size: 20px;
 }
 
 .titulosgeneros{
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    
+    }
+
+.ContenedorPadreGenres{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*FOOTER*/
+
 footer {
     border-top: solid brown;
     display: flex;

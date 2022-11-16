@@ -5,11 +5,12 @@ fetch(url_Genres)
     })
     .then(function (data) {
         console.log(data);
-        let Genres_html = document.querySelector(".Genres")
+        let Genres_html = document.querySelector(".ContenedorPadreGenres")
         let Generos = ''
         for (let i = 0; i < data.genres.length; i++) {
-            Generos += `<li>
-            <a href="detail-genres.html?id=${data.genres[i].id}">${data.genres[i].name}</a> </li>`
+            Generos += `<article>
+            <a href="detail-genres.html?id=${data.genres[i].id}" class="Genres">${data.genres[i].name}</a>
+            </article>`
 
         }
         Genres_html.innerHTML = Generos
