@@ -200,11 +200,16 @@ a {
 .BingleTon {
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
+    margin: 0px auto;
+    position: absolute;
+    font-weight: 600;
 }
 
 .header{
     background-color: #000;
     border-bottom: solid aqua;
+    position: relative;
+    padding: 0 20px;
 }
 
 .logo {
@@ -216,11 +221,13 @@ a {
     flex-direction: row;
     list-style: none;
     padding: 20px;
+    margin-right: auto;
 }
 
 .a-nav {
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
 }
 
 .buscador {
@@ -240,16 +247,21 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .footer{
     border-top: solid rgb(0, 238, 255);
     background-color:rgb(0, 0, 0);
+    padding: 0 20px;
 }
 
 .logoTMDB{
     max-width: 70px;
     max-height: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logoFooter{
@@ -259,4 +271,5 @@ a {
 .nombres-footer {
     list-style: none;
     color: grey;
+    font-size: 12px;
 }
