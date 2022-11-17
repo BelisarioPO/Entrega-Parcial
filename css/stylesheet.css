@@ -138,6 +138,12 @@ a {
     margin-top: 50px;
     margin-left: 15px;
 }
+.detallespelisREVIEWS{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
 
 
 .detallesSeriesTITULO{
@@ -165,6 +171,11 @@ a {
     font-size: 18px;
     list-style: none;
 }
+.detallespelisPlataformas{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+}
+
 
 
 /*GENEROS*/
@@ -179,6 +190,14 @@ a {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     }
+
+.listado-detail-genres{
+list-style: none;
+display: flex;
+align-items: flex-start;
+flex-direction: row;
+}
+
 
 .ContenedorPadreGenres{
     display: flex;

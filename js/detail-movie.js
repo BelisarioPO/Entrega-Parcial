@@ -61,6 +61,31 @@ fetch(url_Movies_Plataformas)
         console.log("Los errores son" + error)
     })
 
+
+    let url_Movies_reviews = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=5b2a5c18601c66bcba1ae9c824344c2b&language=en-US&page=1`
+    fetch(url_Movies_reviews)
+        .then(function (Response) {
+            return Response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        let reviews = document.querySelector(".detallespelisREVIEWS")
+        let Reviews = ""
+        for (let i = 0; i < data.results.length; i++) {
+            Reviews += `<li>${data.results[i].author}:
+            ${data.results[i].content}</li>`
+        }
+        reviews.innerHTML = Reviews
+       
+       
+       
+       
+        })
+        .catch(function (error) {
+            console.log("Los errores son" + error)
+        })
+    
+
 //Favoritos
 //Favoritos
 let favoritos = []
