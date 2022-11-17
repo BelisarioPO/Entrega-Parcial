@@ -39,3 +39,44 @@ fetch(urlSerie)
     .catch(function (error) {
         console.log("Los errores son" + error)
     })
+
+//Favoritos
+let favoritos = []
+
+//Si ya hay datos de favoritos
+let recuperoStorage = localStorage.getItem('favoritos')
+
+//Puede tener o no
+if(recuperoStorage !== null){
+   favoritos = JSON.parse(recuperoStorage)
+}
+
+let boton = document.querySelector('.detallespelis-favoritos');
+
+//Si el id está en el array cambiamos el texto del botón
+if(favoritos.includes(id)){
+   boton.innerText = "Quitar de favoritos"
+}
+
+boton.addEventListener('click', function(){
+
+   //chequear si el id ya está en lista y cambiar el texto del botón
+   if(favoritos.includes(id)){
+      //Sacar de favoritos
+      let indiceFavoritos = favoritos.indexOf(id);
+      favoritos.splice(indiceFavoritos, 1)
+      boton.innerText = 'Agregar a favoritos';
+
+   } else {
+      //Guardar el id del presonaje en el array
+         favoritos.push(id);
+         boton.innerText = 'Quitar de favoritos';
+   }
+
+   //Guardar datos en localStorage
+   let favsToString = JSON.stringify(favoritos)
+   localStorage.setItem('favoritos',favsToString)
+   
+   console.log(localStorage);
+
+})
