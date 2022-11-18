@@ -126,6 +126,8 @@ a {
 .detallespelisPlataformas{
     font-family: 'Quantico', sans-serif;
     font-size: 18px;
+    list-style: none;
+    color: white
 }
 
 /*detail-series*/
