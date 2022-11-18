@@ -242,6 +242,7 @@ flex-direction: row;
     margin: 0px auto;
     position: absolute;
     font-weight: 600;
+    color: white;
 }
 
 .header{
@@ -267,6 +268,7 @@ flex-direction: row;
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
+    color: white!important;
 }
 
 .buscador {
