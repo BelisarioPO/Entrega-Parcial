@@ -68,7 +68,6 @@ fetch(url_Movies_Plataformas)
         let plataformasEmpty = "<li>Esta Pelicula no esta disponible en tu Region</li>"
         plataformas.innerHTML = plataformasEmpty
      
-       
     }
    
    

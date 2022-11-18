@@ -39,14 +39,28 @@ fetch(urlSerie)
     .catch(function (error) {
         console.log("Los errores son" + error)
     })
-    let url_Series_Plataformas = "https://api.themoviedb.org/3/watch/providers/tv?api_key=5b2a5c18601c66bcba1ae9c824344c2b&language=en-US"
+    let url_Series_Plataformas = `https://api.themoviedb.org/3/tv/${id}/watch/providers?api_key=5b2a5c18601c66bcba1ae9c824344c2b`
     fetch(url_Series_Plataformas)
         .then(function (Response) {
             return Response.json();
         })
-        .then(function (Data) {
-            console.log(Data);
+        .then(function (data) {
+            console.log(data);
         let plataformas = document.querySelector(".detallesSeriesPlataformas")
+        let Plataformas = ""
+    if (data.results.AR !== undefined){
+        for (let i = 0; i < data.results.AR.flatrate.length; i++) {
+            Plataformas += `<li>
+            ${data.results.AR.flatrate[i].provider_name}
+            </li>`
+        }
+        plataformas.innerHTML = Plataformas
+    }
+    else{
+        let plataformasEmpty = "<li>Esta Pelicula no esta disponible en tu Region</li>"
+        plataformas.innerHTML = plataformasEmpty
+    }
+        
         
         
         

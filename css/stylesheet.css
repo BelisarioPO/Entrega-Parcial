@@ -182,6 +182,14 @@ a {
     font-size: 18px;
     color: white;
 }
+.detallesSeriesPlataformas{
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+    list-style: none;
+    color: white
+}
+
+}
 
 
 
