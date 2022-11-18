@@ -104,42 +104,41 @@ fetch(url_Movies_Plataformas)
     
 
 //Favoritos
-//Favoritos
-let favoritos = []
+let favoritosPeliculas = []
 
 //Si ya hay datos de favoritos
-let recuperoStorage = localStorage.getItem('favoritos')
+let recuperoStoragePeliculas = localStorage.getItem('favoritosPelis')
 
 //Puede tener o no
-if(recuperoStorage !== null){
-   favoritos = JSON.parse(recuperoStorage)
+if(recuperoStoragePeliculas !== null){
+   favoritosPeliculas = JSON.parse(recuperoStoragePeliculas)
 }
 
 let boton = document.querySelector('.detallespelis-favoritos');
 
 //Si el id está en el array cambiamos el texto del botón
-if(favoritos.includes(id)){
+if(favoritosPeliculas.includes(id)){
    boton.innerText = "Quitar de favoritos"
 }
 
 boton.addEventListener('click', function(){
 
    //chequear si el id ya está en lista y cambiar el texto del botón
-   if(favoritos.includes(id)){
+   if(favoritosPeliculas.includes(id)){
       //Sacar de favoritos
-      let indiceFavoritos = favoritos.indexOf(id);
-      favoritos.splice(indiceFavoritos, 1)
+      let indiceFavoritos = favoritosPeliculas.indexOf(id);
+      favoritosPeliculas.splice(indiceFavoritos, 1)
       boton.innerText = 'Agregar a favoritos';
 
    } else {
       //Guardar el id del presonaje en el array
-         favoritos.push(id);
+         favoritosPeliculas.push(id);
          boton.innerText = 'Quitar de favoritos';
    }
 
    //Guardar datos en localStorage
-   let favsToString = JSON.stringify(favoritos)
-   localStorage.setItem('favoritos',favsToString)
+   let favsToString = JSON.stringify(favoritosPeliculas)
+   localStorage.setItem('favoritosPelis',favsToString)
    
    console.log(localStorage);
 

@@ -96,41 +96,41 @@ fetch(urlSerie)
         
 
 //Favoritos
-let favoritos = []
+let favoritosSeries = []
 
 //Si ya hay datos de favoritos
-let recuperoStorage = localStorage.getItem('favoritos')
+let recuperoStorageSeries = localStorage.getItem('favoritosSeries')
 
 //Puede tener o no
-if(recuperoStorage !== null){
-   favoritos = JSON.parse(recuperoStorage)
+if(recuperoStorageSeries !== null){
+   favoritosSeries = JSON.parse(recuperoStorageSeries)
 }
 
 let boton = document.querySelector('.detallespelis-favoritos');
 
 //Si el id está en el array cambiamos el texto del botón
-if(favoritos.includes(id)){
+if(favoritosSeries.includes(id)){
    boton.innerText = "Quitar de favoritos"
 }
 
 boton.addEventListener('click', function(){
 
    //chequear si el id ya está en lista y cambiar el texto del botón
-   if(favoritos.includes(id)){
+   if(favoritosSeries.includes(id)){
       //Sacar de favoritos
-      let indiceFavoritos = favoritos.indexOf(id);
-      favoritos.splice(indiceFavoritos, 1)
+      let indiceFavoritos = favoritosSeries.indexOf(id);
+      favoritosSeries.splice(indiceFavoritos, 1)
       boton.innerText = 'Agregar a favoritos';
 
    } else {
       //Guardar el id del presonaje en el array
-         favoritos.push(id);
+         favoritosSeries.push(id);
          boton.innerText = 'Quitar de favoritos';
    }
 
    //Guardar datos en localStorage
-   let favsToString = JSON.stringify(favoritos)
-   localStorage.setItem('favoritos',favsToString)
+   let favsToString = JSON.stringify(favoritosSeries)
+   localStorage.setItem('favoritosSeries',favsToString)
    
    console.log(localStorage);
 

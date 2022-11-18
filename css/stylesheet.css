@@ -43,6 +43,11 @@
     margin: 20px;
     border: solid;
     border-color: rgb(255, 255, 255);
+    transition: transform.2s;
+}
+
+.img-index:hover{
+    transform: scale(1.1);
 }
 
 
