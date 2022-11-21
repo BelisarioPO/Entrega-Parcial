@@ -143,3 +143,20 @@ boton.addEventListener('click', function(){
    console.log(localStorage);
 
 })
+
+//Verificacion de Barra de Busqueda
+
+let formulario = document.querySelector(".formulario-busqueda")
+let buscador = document.querySelector(".buscador")
+let mensajeErrorBuscador = document.querySelector(".mensaje-error-buscador")
+
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault()
+    if (buscador.value.length == 0) {
+        mensajeErrorBuscador.innerHTML = "El campo de búsqueda está vacio"
+    } else if (buscador.value.length < 3) {
+        mensajeErrorBuscador.innerHTML = "Mínimo 3 caracteres"
+    } else {
+        this.submit(e)
+    }
+})

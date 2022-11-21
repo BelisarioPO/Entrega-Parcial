@@ -1,7 +1,8 @@
 /* Orden index */
 
-.main{
+main{
     margin: 10px;
+    min-height: 100vh;
 }
 
 .listado-peliculas-favoritas{
