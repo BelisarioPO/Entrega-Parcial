@@ -28,12 +28,6 @@ fetch(url_Discover)
     })
 
 
-
-
-
-
-
-
     .catch(function (error) {
         console.log("Los errores son" + error)
     })
