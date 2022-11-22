@@ -17,8 +17,8 @@ fetch(url_Movies_Popular)
 
             section_Movies_populares += `<li>
             <a href="detail-movie.html?id=${data.results[i].id}" </a>
-    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
-    </li>`
+        <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
+        </li>`
 
         }
 

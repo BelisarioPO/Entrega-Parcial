@@ -3,12 +3,95 @@ let qsObj = new URLSearchParams(queryString)
 let id = qsObj.get("id")
 
 let urlMovies = `https://api.themoviedb.org/3/movie/${id}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US`
+
 fetch(urlMovies)
     .then(function (response) {
-        return response.json();
+        return response.json(); //Lo convierte de texto en un objeto
     })
     .then(function (data) {
         console.log(data);
+
+        // EjemploMovie = {
+        //     adult: false,
+        //     backdrop_path: "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg",
+        //     belongs_to_collection: null,
+        //     budget: 200000000,
+        //     genres: [
+        //         {
+        //             "id": 28,
+        //             "name": "Action"
+        //         },
+        //         {
+        //             "id": 14,
+        //             "name": "Fantasy"
+        //         },
+        //         {
+        //             "id": 878,
+        //             "name": "Science Fiction"
+        //         }
+        //     ],
+        //     homepage: "https://www.dc.com/BlackAdam",
+        //     id: 436270,
+        //     imdb_id: "tt6443346",
+        //     original_language: "en",
+        //     original_title: "Black Adam",
+        //     overview: "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+        //     popularity: 23828.993,
+        //     poster_path: "/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
+        //     production_companies: [
+        //         {
+        //             "id": 12,
+        //             "logo_path": "/iaYpEp3LQmb8AfAtmTvpqd4149c.png",
+        //             "name": "New Line Cinema",
+        //             "origin_country": "US"
+        //         },
+        //         {
+        //             "id": 34081,
+        //             "logo_path": null,
+        //             "name": "Flynn Picture Company",
+        //             "origin_country": "US"
+        //         },
+        //         {
+        //             "id": 73669,
+        //             "logo_path": "/7tmSGstK3KwgcDIuBYLTAayjit9.png",
+        //             "name": "Seven Bucks Productions",
+        //             "origin_country": "US"
+        //         },
+        //         {
+        //             "id": 128064,
+        //             "logo_path": "/13F3Jf7EFAcREU0xzZqJnVnyGXu.png",
+        //             "name": "DC Films",
+        //             "origin_country": "US"
+        //         }
+        //     ],
+        //     production_countries: [
+        //         {
+        //             "iso_3166_1": "US",
+        //             "name": "United States of America"
+        //         }
+        //     ],
+        //     release_date: "2022-10-19",
+        //     revenue: 351000000,
+        //     runtime: 125,
+        //     spoken_languages: [
+        //         {
+        //             "english_name": "English",
+        //             "iso_639_1": "en",
+        //             "name": "English"
+        //         },
+        //         {
+        //             "english_name": "Danish",
+        //             "iso_639_1": "da",
+        //             "name": "Dansk"
+        //         }
+        //     ],
+        //     status: "Released",
+        //     tagline: "The world needed a hero. It got Black Adam.",
+        //     title: "Black Adam",
+        //     video: false,
+        //     vote_average: 6.847,
+        //     vote_count: 1301
+        // }
 
         let urlappend = "https://image.tmdb.org/t/p/w500"
 
