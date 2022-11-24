@@ -235,6 +235,7 @@ flex-direction: row;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 100px;
 }
 
 .BingleTon {
@@ -246,7 +247,7 @@ flex-direction: row;
     color: white;
 }
 
-.header{
+.header {
     background-color: #000;
     border-bottom: solid aqua;
     position: relative;
@@ -272,6 +273,13 @@ flex-direction: row;
     color: white!important;
 }
 
+.formulario-busqueda {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .buscador {
     width: 200px;
     height: 35px;
@@ -280,6 +288,13 @@ flex-direction: row;
     outline: 1px solid silver;
     border-radius: 30px;
     font-family: 'Quantico', sans-serif;
+}
+
+.mensaje-error-buscador {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    bottom: -10px;
 }
 
 /*FOOTER*/

@@ -16,12 +16,9 @@ fetch(url_Movies_Popular)
         for (let i = 0; i < data.results.length; i++) {
 
             section_Movies_populares += `<li>
-            <a href="detail-movie.html?id=${data.results[i].id}">
-            <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/>
-            <p class="Pelis">${data.results[i].title}</p>
-            <p class="Pelis">${data.results[i].release_date}</p>
-            </a>
-        </li>`
+            <a href="detail-movie.html?id=${data.results[i].id}" </a>
+    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
+    </li>`
 
         }
 

@@ -3,12 +3,14 @@ let qsObj = new URLSearchParams(queryString)
 let id = qsObj.get("id")
 
 let urlMovies = `https://api.themoviedb.org/3/movie/${id}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US`
+
 fetch(urlMovies)
     .then(function (response) {
-        return response.json();
+        return response.json(); //Lo convierte de texto en un objeto
     })
     .then(function (data) {
         console.log(data);
+
 
         let urlappend = "https://image.tmdb.org/t/p/w500"
 
