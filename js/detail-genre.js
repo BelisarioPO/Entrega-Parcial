@@ -19,21 +19,15 @@ fetch(url_Discover)
         for (let i = 0; i < data.results.length; i++) {
 
             section_genre_movie += `<li>
-            <a href="detail-movie.html?id=${data.results[i].id}"><img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"></a>
+            <a href="detail-movie.html?id=${data.results[i].id}">
+            <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index">
+            <p class="Pelis">${data.results[i].title}</p>
+            </a>
     </li>`
 
         }
         index_genres_movie.innerHTML = section_genre_movie
-        console.log(section_genre_movie)
     })
-
-
-
-
-
-
-
-
     .catch(function (error) {
         console.log("Los errores son" + error)
     })

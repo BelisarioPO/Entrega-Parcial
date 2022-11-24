@@ -17,6 +17,7 @@ for (let i = 0; i < favoritosSeries.length; i++) {
             favos += `<li>
             <a href="detail-serie.html?id=${data.id}">
                 <img src="${urlAppend + data.poster_path}" alt="" class="img-index">
+                <p class="Pelis">${data.name}</p>
             </a>
         </li>`
 
@@ -44,7 +45,10 @@ for (let i = 0; i < favoritosPeliculas.length; i++) {
         .then(function (data) {
             console.log(data);
             favosSeries += `<li>
-            <a href="detail-movie.html?id=${data.id}"><img src="${urlAppend + data.poster_path}" alt="" class="img-index"></a>
+            <a href="detail-movie.html?id=${data.id}">
+            <img src="${urlAppend + data.poster_path}" alt="" class="img-index">
+            <p class="Pelis">${data.title}</p>
+            </a>
         </li>`
 
             favsSeries.innerHTML = favosSeries

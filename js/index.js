@@ -16,14 +16,16 @@ fetch(url_Movies_Popular)
         for (let i = 0; i < data.results.length; i++) {
 
             section_Movies_populares += `<li>
-            <a href="detail-movie.html?id=${data.results[i].id}" </a>
-    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
-    </li>`
+            <a href="detail-movie.html?id=${data.results[i].id}">
+            <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/>
+            <p class="Pelis">${data.results[i].title}</p>
+            <p class="Pelis">${data.results[i].release_date}</p>
+            </a>
+        </li>`
 
         }
 
         index_Movies_populares.innerHTML = section_Movies_populares
-        console.log(section_Movies_populares)
 
     })
     .catch(function (error) {
@@ -48,15 +50,16 @@ fetch(url_Movies_Valorados)
 
         for (let i = 0; i < data.results.length; i++) {
             section_Movies_top_rated += `<li>
-            <a href="detail-movie.html?id=${data.results[i].id}" </a>
-    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
-    </li>`
-            
+            <a href="detail-movie.html?id=${data.results[i].id}">
+            <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/>
+            <p class="Pelis">${data.results[i].title}</p>
+            <p class="Pelis">${data.results[i].release_date}</p>
+            </a>
+        </li>`
+
         }
 
         index_Movies_Top_Rated.innerHTML = section_Movies_top_rated
-        console.log(section_Movies_top_rated)
-
 
     })
     .catch(function (error) {
@@ -81,16 +84,16 @@ fetch(url_Tv_Populares)
 
         for (let i = 0; i < data.results.length; i++) {
             section_Tv_Popular += `<li>
-            <a href="detail-serie.html?id=${data.results[i].id}" </a>
-    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
-    </li>`
+            <a href="detail-serie.html?id=${data.results[i].id}">
+            <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/>
+            <p class="Pelis">${data.results[i].name}</p>
+            <p class="Pelis">${data.results[i].first_air_date}</p>
+            </a>
+        </li>`
 
         }
 
         index_Tv_populares.innerHTML = section_Tv_Popular
-        console.log(section_Tv_Popular)
-
-
     })
     .catch(function (error) {
         console.log("Los errores son" + error)
@@ -113,15 +116,15 @@ fetch(url_Tv_Valorados)
 
         for (let i = 0; i < data.results.length; i++) {
             section_Tv_top_rated += `<li>
-            <a href="detail-serie.html?id=${data.results[i].id}" </a>
-    <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/> 
-    </li>`
+            <a href="detail-serie.html?id=${data.results[i].id}">
+            <img src="${urlAppend + data.results[i].poster_path}" alt="" class="img-index"/>
+            <p class="Pelis">${data.results[i].name}</p>
+            <p class="Pelis">${data.results[i].first_air_date}</p>
+            </a>
+        </li>`
         }
 
         index_Tv_Top_Rated.innerHTML = section_Tv_top_rated
-        console.log(section_Tv_top_rated)
-
-
     })
     .catch(function (error) {
         console.log("Los errores son" + error)
@@ -133,7 +136,7 @@ let formulario = document.querySelector(".formulario-busqueda")
 let buscador = document.querySelector(".buscador")
 let mensajeErrorBuscador = document.querySelector(".mensaje-error-buscador")
 
-formulario.addEventListener("submit", function(e) {
+formulario.addEventListener("submit", function (e) {
     e.preventDefault()
     if (buscador.value.length == 0) {
         mensajeErrorBuscador.innerHTML = "El campo de búsqueda está vacio"
