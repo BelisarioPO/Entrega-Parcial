@@ -28,11 +28,6 @@ fetch(url_Discover)
         }
         index_genres_movie.innerHTML = section_genre_movie
     })
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 417c41749cdced79c655eae3ac5331b6ac3e08ae
     .catch(function (error) {
         console.log("Los errores son" + error)
     })
